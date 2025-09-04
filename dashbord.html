@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Parvinder Panwar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h2>🚀 My Startup | By Parvinder Panwar</h2>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <section class="content">
+    <h1>My Dashboard</h1>
+    <p>Welcome back, <b>Parvinder Panwar</b> 👋</p>
+    <a href="projects.html" class="btn">View Projects</a>
+  </section>
+
+  <footer>© 2025 Parvinder Panwar</footer>
+
+  <!-- Chatbot -->
+  <div class="chatbot-icon" onclick="toggleChat()">💬</div>
+  <div class="chatbot-box" id="chatbot">
+    <div class="chatbot-header">
+      AI Chatbot 🤖 - By Parvinder Panwar
+      <span onclick="toggleChat()" style="cursor:pointer;">✖</span>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-input">
+      <input type="text" id="user-input" placeholder="Ask me something..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
