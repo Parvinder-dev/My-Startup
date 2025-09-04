@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - Parvinder Panwar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav><h2>🚀 My Startup | By Parvinder Panwar</h2></nav>
+
+  <section class="form-container">
+    <h2>Sign Up</h2>
+    <form onsubmit="return fakeSignup(event)">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Create Account</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </section>
+
+  <footer>© 2025 Parvinder Panwar</footer>
+
+  <!-- Chatbot -->
+  <div class="chatbot-icon" onclick="toggleChat()">💬</div>
+  <div class="chatbot-box" id="chatbot">
+    <div class="chatbot-header">
+      AI Chatbot 🤖 - By Parvinder Panwar
+      <span onclick="toggleChat()" style="cursor:pointer;">✖</span>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-input">
+      <input type="text" id="user-input" placeholder="Ask me something..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
