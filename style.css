@@ -1,0 +1,253 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0f172a;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background: #1e293b;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+nav a {
+  color: #f1f5f9;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+.btn.secondary {
+  background: #334155;
+  color: #f1f5f9;
+}
+
+.btn.secondary:hover {
+  background: #475569;
+}
+
+/* Form */
+.form-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.form-container h2 {
+  margin-bottom: 1rem;
+  color: #38bdf8;
+  text-align: center;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #334155;
+  color: #f1f5f9;
+}
+
+.form-container input::placeholder {
+  color: #94a3b8;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #38bdf8;
+  border: none;
+  border-radius: 6px;
+  color: #0f172a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background: #0ea5e9;
+}
+
+/* Projects / Dashboard */
+.content {
+  padding: 2rem;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.project {
+  background: #1e293b;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.project h2 {
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e293b;
+  color: #94a3b8;
+  margin-top: 2rem;
+}
+
+/* Chatbot Styles */
+.chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.chatbot-icon:hover {
+  background: #0ea5e9;
+}
+
+.chatbot-box {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 320px;
+  max-height: 450px;
+  background: #1e293b;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+}
+
+.chatbot-header {
+  background: #38bdf8;
+  padding: 10px;
+  font-weight: bold;
+  color: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.chatbot-messages .user {
+  text-align: right;
+  margin: 5px 0;
+  color: #38bdf8;
+}
+
+.chatbot-messages .bot {
+  text-align: left;
+  margin: 5px 0;
+  color: #f1f5f9;
+}
+
+.chatbot-input {
+  display: flex;
+  border-top: 1px solid #334155;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #334155;
+  color: #fff;
+}
+
+.chatbot-input input::placeholder {
+  color: #94a3b8;
+}
+
+.chatbot-input button {
+  padding: 10px;
+  background: #38bdf8;
+  border: none;
+  color: #0f172a;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chatbot-input button:hover {
+  background: #0ea5e9;
+}
