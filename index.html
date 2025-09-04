@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Startup - Parvinder Panwar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h2>🚀 My Startup | By Parvinder Panwar</h2>
+    <div>
+      <a href="projects.html">Projects</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Buy the Dip, Sell the Peak 🚀</h1>
+    <p>Smarter Crypto & Stock Trading — prepare for the future with us.</p>
+    <div class="buttons">
+      <a href="signup.html" class="btn">Get Started</a>
+      <a href="login.html" class="btn secondary">Login</a>
+    </div>
+  </section>
+
+  <footer>© 2025 Parvinder Panwar. All rights reserved.</footer>
+
+  <!-- Chatbot -->
+  <div class="chatbot-icon" onclick="toggleChat()">💬</div>
+  <div class="chatbot-box" id="chatbot">
+    <div class="chatbot-header">
+      AI Chatbot 🤖 - By Parvinder Panwar
+      <span onclick="toggleChat()" style="cursor:pointer;">✖</span>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-input">
+      <input type="text" id="user-input" placeholder="Ask me something..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
